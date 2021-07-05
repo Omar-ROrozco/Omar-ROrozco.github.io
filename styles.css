@@ -1,0 +1,542 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    background-color: #D83A56;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #faf9f7;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo {
+    color: #eeedec;
+    font-size: 35px;
+    padding: 0 20px;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.menu_item {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu_item li {
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu_item li a {
+    text-decoration: none;
+    color: #fcfcfc;
+    padding: 7px 7px;
+    font-size: 15px;
+    display: flex;
+    text-transform: uppercase;
+    flex-grow: 0;
+}
+
+.menu_item li:hover,
+li.active {
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+}
+
+.btn_menu {
+    margin-right: 30px;
+    font-size: 30px;
+    color: c;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        height: 65px;
+    }
+    .menu_item li {
+        display: none;
+    }
+    .logo {
+        font-size: 22px;
+        padding-left: 35px;
+    }
+    .btn_menu {
+        margin-right: 30px;
+        font-size: 30px;
+        color: #fafafa;
+        cursor: pointer;
+        display: flex;
+    }
+}
+
+
+/* Empiezan estilos Jumbotron, en navbar no se hace mobile first, pero desde aqui si */
+
+.container_jumbo {
+    flex-direction: column;
+    display: flex;
+    background-color: #0d1229;
+    width: 100vw;
+    height: 380px;
+}
+
+.title_1 {
+    font-size: 35px;
+    color: #fafafa;
+    margin: 25px 10px 0px 10px;
+}
+
+.title_2 {
+    font-size: 35px;
+    color: #fafafa;
+    margin: 25px 0px 0px 10px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+.container_jumbo2 {
+    flex-direction: row;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.ilustracion {
+    max-width: 200px;
+}
+
+.ra {
+    text-decoration: none;
+    color: #fafafa;
+    background-color: #D83A56;
+    width: 300px;
+    height: 165px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.ra .presiona {
+    font-size: 32px;
+    margin: 0;
+}
+
+.only_desktop {
+    display: none;
+}
+
+
+/* empiezan estilos side */
+
+.side_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(192, 192, 192);
+    justify-content: center;
+}
+
+.side_container .card {
+    width: 330px;
+    height: auto;
+    align-self: start;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    margin: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: .4s;
+}
+
+.side_container .card:hover {
+    transform: translateY(-15px);
+}
+
+.side_container .card img {
+    width: 350px;
+    height: 220px;
+}
+
+.side_container div h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 10px 10px;
+    color: #D83A56;
+}
+
+.side_container div p {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.side_container div a {
+    text-decoration: none;
+    color: slategray;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* Terminan los estilos de side */
+
+
+/* Empiezan el estilo de section */
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: #0d1229;
+    justify-content: center;
+}
+
+.section_container h2 {
+    text-align: center;
+    color: snow;
+    font-size: 35px;
+    margin: 5px 0px;
+}
+
+.section_container .card_plan {
+    width: 330px;
+    height: auto;
+    align-self: start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    margin: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: .4s;
+}
+
+.section_container .card_plan h3 {
+    color: snow;
+    color: #D83A56;
+    font-size: 45px;
+    margin: 10px 0px;
+}
+
+.section_container .card_plan p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.section_container .card_plan a {
+    text-decoration: none;
+    background-color: #D83A56;
+    color: #fff7f8;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .3);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* Terminan los estilos de scetion */
+
+
+/* Empiezan estilos footer */
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    background: #d3d2d2;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.container_footer ul h2 {
+    color: #272627;
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 15px 15px 5px;
+}
+
+.container_footer ul li {
+    list-style: none;
+    background-color: #D83A56;
+    padding: 10px 10px;
+    margin: 8px 5px 0px 0px;
+    border-radius: 5px;
+}
+
+.container_footer ul {
+    padding: 10px;
+    margin: 0px 5px 0px 0px;
+}
+
+.container_footer ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #e6e4e5;
+    font-weight: bold;
+}
+
+.container_footer ul li i {
+    font-size: 30px;
+    color: #e6e4e5;
+    margin-right: 5px;
+}
+
+.container_footer p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container_footer .about_us_mq_correo {
+    display: none;
+}
+
+.container_footer .about_us_mq {
+    display: none;
+}
+
+.container_footer .correo {
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    height: auto;
+}
+
+.container_footer .correo #email {
+    width: 300px;
+}
+
+
+/* terminan estilos footer */
+
+@media screen and (min-width: 1024px) {
+    .container_jumbo {
+        display: flex;
+        flex-direction: row;
+        background-color: #0d1229;
+        width: 100vw;
+        height: auto;
+    }
+    .only_mobile {
+        display: none;
+    }
+    .only_desktop {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .ilustracion {
+        max-width: 400px;
+    }
+    .title_1 {
+        font-size: 95px;
+        color: #fafafa;
+        margin: 25px 10px 0px 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .title_2 {
+        font-size: 95px;
+        color: #fafafa;
+        margin: 25px 0px 0px 10px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .ra {
+        background-color: #D83A56;
+        width: 800px;
+        height: 200px;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 43px;
+        margin-left: 150px;
+    }
+    .ra:hover {
+        background-color: rgba(196, 9, 9);
+        transition: .4s;
+        transform: translateY(-15px)
+    }
+    .ra a {
+        text-decoration: none;
+        color: rgb(214, 214, 205);
+    }
+    .ra a p {
+        font-size: 70px;
+        margin: 0;
+        font-weight: bolder;
+        color: #fafafa;
+    }
+    /* comienza estilos desktop para aside */
+    .side_container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        background-color: rgb(192, 192, 192);
+        justify-content: center;
+    }
+    .side_container .card {
+        width: 330px;
+        height: 550px;
+        align-self: start;
+        background-color: seashell;
+        border-radius: 8px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+        overflow: hidden;
+        margin: 15px;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: .4s;
+    }
+    .side_container .card img {
+        width: fit-content;
+        height: 220px;
+    }
+    .side_container div h2 {
+        text-align: center;
+        font-size: 35px;
+        margin: 10px 10px;
+        color: #D83A56;
+    }
+    .side_container div a {
+        text-decoration: none;
+        color: slategray;
+        font-weight: bold;
+        margin-bottom: 15px;
+        align-items: flex-end;
+    }
+    /* Empiezan estilos de section */
+    .section_container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        background-color: #0d1229;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .section_container .card_plan {
+        width: 500px;
+        height: 700 px;
+        align-self: start;
+        border-radius: 8px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+        overflow: hidden;
+        margin: 15px;
+        flex-wrap: wrap;
+        text-align: center;
+        transition: .4s;
+    }
+    .section_container .card_plan:hover {
+        transform: translateY(-15px);
+    }
+    .section_container h2 {
+        text-align: center;
+        color: snow;
+        font-size: 50px;
+        display: inline;
+        width: 100%;
+    }
+    .section_container .card_plan p {
+        font-size: 30px;
+    }
+    .section_container .card_plan a {
+        font-size: 60px;
+    }
+    .section_container .card_plan h3 {
+        font-size: 70px;
+    }
+    /* Terminan los estilos de section */
+    /* Comienzan estilos de footer */
+    .container_footer {
+        display: flex;
+        flex-direction: row;
+        background: #d3d2d2;
+        width: 100vw;
+        height: auto;
+    }
+    .container_footer ul h2 {
+        color: #272627;
+        text-align: left;
+        font-size: 35px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .container_footer ul {
+        padding: 0px;
+    }
+    .container_footer .mq {
+        display: none;
+    }
+    .container_footer .about_us_mq {
+        display: inline-block;
+        width: 550px;
+        margin-left: 30px;
+    }
+    .container_footer .about_us_mq h2 {
+        width: 500px;
+        text-align: left;
+        font-size: 25px;
+        margin: 5px 0px 0px 0px;
+    }
+    .container_footer .about_us_mq p {
+        text-align: left;
+        font-size: 15px;
+    }
+    .container_footer ul li {
+        list-style: none;
+        background-color: #d3d2d2;
+        padding: 0;
+        display: inline;
+        margin: 35px 10px 10px 10px;
+    }
+    .container_footer ul li a i:hover {
+        transform: translateY(5px);
+    }
+    .container_footer ul li a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #000000;
+        font-weight: bold;
+    }
+    .container_footer ul li i {
+        font-size: 20px;
+        color: #313131;
+        margin-right: 5px;
+    }
+    .container_footer .about_us_mq_correo {
+        display: flex;
+        text-align: center;
+        height: 100px;
+        font-size: 30px;
+        margin: 10px 0px 0px 10px;
+        flex-wrap: wrap;
+    }
+    .container_footer .about_us_mq_correo .correo #contacto {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+}
